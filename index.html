@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+        fieldset {
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Регистрация</h1>
+<form>
+    <fieldset><legend><label for="name">Имя:</label></legend>
+    <input type="text" id="name" name="name" required></fieldset>
+
+    <fieldset><legend><label for="email">Электронная почта:</label></legend>
+    <input type="email" id="email" name="email" required></fieldset>
+
+    <fieldset><legend><label for="password">Пароль:</label></legend>
+    <input type="password" id="password" name="password" required></fieldset>
+
+    <fieldset><legend><label for="comments">Комментарии:</label></legend>
+    <textarea id="comments" name="comments" ></textarea></fieldset>
+</form>
+<br>
+<form>
+    <fieldset><legend><label for="country">Выберите страну:</label></legend>
+    <select id="country" name="country">
+        <option value="russia">Россия</option>
+        <option value="usa">США</option>
+        <option value="canada">Канада</option>
+    </select></fieldset>
+    
+    <br>
+
+    <button type="submit">Отправить</button>
+    <button type="reset">Сбросить</button>
+</form>
+</body>
+</html>
